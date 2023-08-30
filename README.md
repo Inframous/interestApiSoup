@@ -9,16 +9,8 @@ Every time a request is made, the API will first check to see if the current dat
 
 ### Build Your Own Container
 ```code
-git clone https://github.com/Inframous/interestApiBoi.git
+git clone https://github.com/Inframous/interestApiSoup.git
 sudo docker build -t "interestapi" .
-sudo docker run -d -p 80:80 --restart always --name interestapi interestapi
-```
-Point your browser at `http://<api_url>/api/interest/boi` to receive Bank Of Israel's interest rate, or use `http://<api_url>/api/interest/prime` for Israel "Prime Interest"
-
-### Docker Hub (x86 only)
-Pull the image from Docker.io and run it.
-```code
-sudo docker pull inframous/interestapi:latest
 sudo docker run -d -p 80:80 --restart always --name interestapi interestapi
 ```
 Point your browser at `http://<api_url>/api/interest/boi` to receive Bank Of Israel's interest rate, or use `http://<api_url>/api/interest/prime` for Israel "Prime Interest"
